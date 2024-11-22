@@ -18,10 +18,13 @@ body {
 .container {
     padding: 20px;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;   
+    right: 0; 
+    scroll-behavior: smooth;
 }
 
 .row {
@@ -77,31 +80,32 @@ h1:hover, h2:hover, h3:hover {
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
+    height: 100%;
 }
 
 .row1 {
     background-color: rgba(255, 99, 71, 0.9); /* Tomato */
-    height: auto;
+    height: 100%;
 }
 
 .row2 {
     background-color: rgba(173, 216, 230, 0.9); /* Light Blue */
-    height: auto;
+    height: 100%;
 }
 
 .row3 {
     background-color: rgba(255, 223, 186, 0.9); /* Peach */
-    height: auto;
+    height: 100%;
 }
 
 .row4 {
     background-color: rgba(240, 230, 140, 0.9); /* Khaki */
-    height: auto;
+    height: 100%;
 }
 
 .row5 {
     background-color: rgba(144, 238, 144, 0.9); /* Light Green */
-    height: auto;
+    height: 100%;
 }
 
 .row2:hover, .row3:hover, .row4:hover, .row5:hover {
